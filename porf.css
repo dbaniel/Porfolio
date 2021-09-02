@@ -1,0 +1,1291 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  /* background-color: rgb(255, 123, 47); */
+  font-family: "Orbitron", sans-serif;
+  /* color: red; */
+  background: #16e0bd;
+}
+
+header {
+  height: 0; /* i fix it ! header gap set to height 0, no margin 0 needed */
+}
+
+/* video */
+
+.mp4 {
+  width: 100%;
+  height: 100vh; /* always set vh inside of container 1st before element */
+  overflow: hidden;
+  /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+
+.mp4 video {
+  position: absolute;
+  left: 0%;
+  top: 0%;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: -1;
+}
+
+.mp4 h1 {
+  color: #2196f3;
+  position: absolute;
+  top: 200px;
+  left: 100px;
+  background: ye;
+}
+
+.logo {
+  background: blue;
+  /* position: absolute; */
+}
+
+.logo img {
+  position: fixed;
+  top: 5px;
+  left: 10px;
+  width: 6%;
+  cursor: pointer;
+  z-index: 1;
+}
+
+hr {
+  /* i fix it for .. horizontal line */
+  width: 100%;
+  height: 2px;
+  margin-left: auto;
+  margin-right: auto;
+  position: fixed;
+  top: 69px;
+  background: orangered;
+  padding-top: 1px;
+  border: none;
+}
+
+.nav {
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+.nav-list {
+  position: absolute; /* i fix it ! header gap, set to absolute */
+  width: 100%; /* for gap */
+  margin-top: -22px;
+  padding: 25px;
+  list-style: none;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  text-decoration-line: none;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.nav-list a {
+  text-decoration: none;
+  font-weight: 50px solid;
+}
+
+.nav-link {
+  font-size: 18px;
+  color: whitesmoke;
+}
+.nav-item a:hover {
+  color: yellow;
+}
+
+.hover-element {
+  position: absolute;
+  top: -50px;
+  left: 0;
+  width: 70%;
+  height: 10%;
+  background-color: #2b2924;
+  z-index: -1;
+}
+
+/* .intro {
+  padding: 300px 100px 450px;
+  background-image: url(Screenshot_2020-12-16\ Pure\ Beauty.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+} */
+
+.about {
+  min-height: 90vh;
+  /* background: yellowgreen; */
+  /* background: #16e0bd; */
+  /* display: block; */
+  /* max-width: 900px; */
+  /* margin: auto; */
+  /* width: 100%; */
+  /* flex: 0 0 100%; */
+  /* max-width: 100%; */
+  /* padding: 0 15px; */
+  /* padding: 100px; */
+  /* padding-bottom: 200px; */
+}
+
+.about h1 {
+  /* text-align: center; */
+  font-size: 40px;
+  margin: 0.8em auto; /* i fixed the long line background */
+  width: 8%;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #0880d6;
+}
+
+/* top button > how to create a fast button */
+.btn {
+  display: block;
+  width: 50%;
+  padding: 0.7rem 1.8rem; /* this is to center text inside button */
+  height: 2.5rem;
+  font-size: 0.8rem;
+  /* font-weight: bolder; */
+  text-decoration: none; /* it worked **** vs outline-none */
+  /* outline: none; */
+  text-align: center;
+  color: orangered;
+  background: lightgray;
+  border: none;
+  border-radius: 10px;
+  box-shadow: 0 0.3rem rgba(121, 121, 121, 0.65);
+  /* letter-spacing: 0.1rem; */
+  position: absolute;
+  bottom: 12%;
+  margin-bottom: -1rem;
+  left: 80px;
+  font-family: "Orbitron", sans-serif;
+}
+
+.btn:hover {
+  /* filter: brightness(110%);  */
+  background-color: #2196f3;
+  transition: ease-out 3s; /* this one does work */
+  /* transition: transform 200ms ease-in-out; time speed */
+}
+
+/* about pic */
+
+.ab {
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+  background: yellow;
+}
+
+.svg {
+  width: 100%;
+  position: absolute;
+  top: 1445px;
+}
+
+.pic img {
+  /* width: 300px;
+  clip-path: circle(30vh at 80%); if u wanna do half circle looks cool */
+  width: 350px;
+  /* clip-path: circle(50% at 28% 60%); */
+  clip-path: circle(50% at 25%);
+  /* clip-path: circle(); */
+  position: absolute;
+  /* height: 100vh; */
+  top: 700px;
+  left: -5px;
+  z-index: 1;
+  margin-top: 200px;
+}
+.pic h2 {
+  /* display: block; */
+  /* text-align: right; */
+  position: relative;
+  bottom: -115px;
+  /* left: 300px; */
+  font-size: 3rem;
+  padding-left: 370px;
+  text-indent: 150px;
+}
+
+.rectangle {
+  visibility: hidden;
+}
+
+.Figma {
+  position: relative;
+  left: 20%;
+  top: 100px;
+  /* transform: translate(-50%, -50%); this is to move up card*/
+  width: 300px;
+  height: 400px;
+  /* cursor: pointer; */
+  /* background: blue; */
+  /* border: 5px solid orangered; */
+  /* border-radius: 0.4rem; */
+  overflow: hidden;
+  /* box-shadow: 0 3rem 6rem rgb(0, 0, 0.1); if disable figma pic has no backg color-better*/
+  transition: 0.2s linear;
+}
+
+.Figma a {
+  pointer-events: none;
+}
+
+.title {
+  text-align: center;
+  padding: 12px;
+}
+
+.p-text {
+  position: relative;
+  left: 30px;
+  line-height: 2em;
+}
+
+.Figma:hover {
+  /*transform: translate(-50%, -60%); i fix it so it wont move out of place */
+  /* box-shadow: 0 4rem 8rem rgba(0, 0, 0, 1); if disable figma pic has no backg color-better*/
+  transform: scale(1.1); /* to zoom in card */
+}
+
+.Figma2 {
+  position: relative;
+  left: 20%;
+  top: 100px;
+  /* transform: translate(-50%, -50%); */
+  width: 300px;
+  height: 400px;
+  /* background: transparent; */
+  /* background: blue; */
+  /* border: 5px solid orangered; */
+  /* box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1); */
+  overflow: hidden;
+  transition: 0.2s linear; /* this makes it smooth */
+}
+.Figma2 a {
+  pointer-events: none;
+}
+
+.Figma2:hover {
+  transform: scale(1.1); /* i fix it so it wont move out of place */
+  /* box-shadow: 0 4rem 8rem rgba(0, 0, 0, 1); */
+}
+
+.Figma3 {
+  position: relative;
+  left: 20%;
+  top: 100px;
+  /* right: 170px; this is position absolute*/
+  /* top: 1350px; position absolute*/
+  /* transform: translate(-50%, -50%); */
+  width: 300px;
+  height: 400px;
+  /* background: transparent; */
+  /* border: 5px solid orangered; */
+  /* background: blue; */
+  /* box-shadow: 0 3rem 6rem rgba(0, 0, 0, 0.1); */
+  transition: 0.2s linear;
+}
+.Figma3:hover {
+  /*transform: scale(1.1); i fix it so it wont move out of place */
+  /* box-shadow: 0 4rem 8rem rgba(0, 0, 0, 1); */
+}
+
+.boxes {
+  display: grid;
+  /* height: 100vh; this gives too much height */
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
+  /* align-items: flex-start; it doesn't do anything this propertly */
+  /* flex: 0 0 100%; */
+  /* max-width: 100%; */
+  /* padding: 0 15px; */
+  /* flex: 0 0 33.33%; */
+  /* max-width: 33.33%; */
+  /* grid-gap: 2rem */
+}
+
+/*.boxes {  it works like this too 
+  display: grid;
+  /* grid-gap: 6rem; *
+  grid-template-columns: repeat(auto-fit, minmax(1rem, 1fr)); */
+
+/* proyects start */
+
+.Projects {
+  min-height: 80vh; /* this creates page-height like padding but auto */
+  background: rgb(150, 68, 150);
+  padding-top: 60px;
+
+  /* flex: 0 0 100%; */
+  /* max-width: 100%; */
+}
+
+.my {
+  position: relative; /* to aim for manual-easy-element moving do relative*/
+  top: 20px;
+  text-align: center;
+  /* margin-top: 50px; */
+  color: #2196f3;
+  font-weight: 20px;
+  text-decoration: underline;
+  background: white;
+  font-size: 40px;
+  margin: 0.5em auto; /* i fixed the long line background */
+  max-width: 15%;
+  border-radius: 10px;
+  text-decoration: none;
+  /* padding-top: 70px; */
+  /* margin-bottom: 50px; */
+}
+
+/* grid-view */
+
+.P-works {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 0.5fr;
+  grid-gap: 0.5rem;
+  padding-top: 50px;
+  /* height: 100vh; this fixes de overlapping in mobile */
+}
+
+.cuadro1 {
+  background: white;
+  /* width: 100%; */
+}
+
+.cuadro1 .btn {
+  /* display: block; */
+  /* margin: 0 auto; */
+  position: relative;
+  top: 310px;
+  left: 150px;
+  width: 40%;
+  /* background: #cfc6c6; */
+  /* text-align: center; */
+  z-index: 1;
+  /* flex: 0 0 33.33%; */
+  flex: 0 0 29%;
+  max-width: 29%;
+
+  /* max-width: 33.33%; */
+  /* background-color: rgb(235, 225, 225); */
+}
+
+.mn {
+  /* text-align: center; */
+  position: absolute;
+  /* top: 88em; */
+  /* left: 100px; */
+  color: blue;
+  background: #84beb5;
+  text-decoration: none;
+  padding: 12px 12px;
+  left: 170px;
+  margin-top: -200px;
+  text-align: center;
+  font-size: 16px;
+  /* opacity: 0; */
+  /* transition: 0.5s ease; */
+  /* position: absolute; */
+
+  /* transform: translate(-50%, -50%); */
+
+  /* text-decoration: none; */
+  /* padding: 16px 32px; */
+}
+
+.foto1 {
+  width: 100%;
+  height: 360px;
+  object-fit: contain;
+  transition: 0.5s ease;
+  opacity: 1;
+}
+
+.mini-box {
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  /* left: 190px; */
+  /* left: 240px;
+  bottom: 1px; */
+  /* top: 0px; */
+  /* bottom: -50px; */
+  transform: translate(-50%, -50%);
+  text-align: center;
+  /* padding: 16px 32px; */
+  /* text-decoration: none; */
+}
+
+/* .cuadro1 h1 {
+  background-color: yellowgreen;
+  font-size: 16px;
+  padding: 16px 32px;
+  color: red;
+} */
+
+/* .mini-text {
+  background: red;
+  color: aqua;
+  padding: 122px 154px;
+  position: relative;
+  bottom: 180px;
+  left: 36px;
+} */
+
+.cuadro1:hover .foto1 {
+  opacity: 0.3;
+  /* transform: scale(1.5); */
+  /* transform: rotate(90deg); */
+}
+
+.cuadro1:hover .mini-box {
+  opacity: 1;
+}
+
+.cuadro2 {
+  background: white;
+  /* display: block; */
+  /* transition: 0.5s ease ease-in; */
+}
+
+.cuadro2 .btn {
+  display: block;
+  /* margin: 0 auto; */
+  position: relative;
+  top: 310px;
+  left: 163px;
+  width: 40%;
+  /* background: #cfc6c6; */
+  /* text-align: center; */
+  z-index: 1;
+  /* flex: 0 0 33.33%; */
+  flex: 0 0 29%;
+  max-width: 29%;
+}
+
+.foto2 {
+  width: 100%;
+  height: 360px;
+  object-fit: fill;
+  transition: 0.5s ease;
+  opacity: 1;
+}
+
+.mn1 {
+  /* top: 188em; */
+  position: absolute;
+  left: 90px;
+
+  color: blue;
+  background: #84beb5;
+  text-decoration: none;
+  padding: 16px 32px;
+  margin-top: -200px; /* this fixes the top gap */
+  text-align: center;
+  font-size: 16px;
+}
+
+.mini-box2 {
+  left: 620px;
+
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* .mini-text2 {
+  background: rgb(32, 106, 202);
+  color: orange;
+  font: 5px;
+  font-weight: 20px;
+  position: relative;
+  padding: 110px 168px;
+  bottom: 180px;
+  left: 220px;
+  margin-right: 24px;
+} */
+
+.cuadro2:hover .foto2 {
+  opacity: 0.3;
+  /* transform: scale(1.5); */
+  /* transform: rotate(90deg); */
+}
+
+.cuadro2:hover .mini-box2 {
+  opacity: 1;
+}
+
+.cuadro3 {
+  background: white;
+  /* display: block; */
+  /* transition: 0.5s ease ease-in; */
+}
+
+.cuadro3 .btn {
+  display: block;
+  /* margin: 0 auto; */
+  position: relative;
+  top: 310px;
+  left: 165px;
+  width: 40%;
+  /* background: #cfc6c6; */
+  /* text-align: center; */
+  z-index: 1;
+  /* flex: 0 0 33.33%; */
+  flex: 0 0 29%;
+  max-width: 31%;
+}
+
+.foto3 {
+  width: 100%;
+  height: 360px;
+  object-fit: fill;
+  transition: 0.5s ease;
+  opacity: 1;
+}
+
+.mn2 {
+  position: absolute;
+  left: -110px;
+
+  color: blue;
+  background: #84beb5;
+  text-decoration: none;
+  padding: 16px 32px;
+  margin-top: -200px; /* this fixes the top gap */
+  text-align: center;
+  font-size: 16px;
+}
+
+.mini-box3 {
+  right: 240px;
+  transition: 0.5s ease;
+  opacity: 0;
+  position: absolute;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+/* .mini-text3 {
+  background: rgb(219, 129, 12);
+  color: blue;
+  font: 40px;
+  font-weight: 70px;
+  padding: 116px 168px;
+  position: relative;
+  bottom: 180px;
+  left: 152px;
+} */
+
+.cuadro3:hover .foto3 {
+  opacity: 0.3;
+  /* transform: scale(1.5); */
+  /* transform: rotate(90deg); */
+}
+
+.cuadro3:hover .mini-box3 {
+  opacity: 1;
+}
+
+/* proyects end */
+
+.container {
+  /* max-width: 1140px; */
+  margin: auto;
+  /* background-color: red; */
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.section-title {
+  /* background-color: red; */
+  flex: 0 0 100%;
+  margin-bottom: 80px;
+}
+.section-title h2 {
+  font-size: 40px;
+  text-align: center;
+  margin: 0;
+  color: #ffffff;
+  position: relative;
+  z-index: 1;
+}
+
+.section-title h2:before {
+  content: attr(data-text);
+  color: #ffffff;
+  font-size: 80px;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  text-transform: uppercase;
+  opacity: 0.1;
+  z-index: -1;
+}
+
+/* contact start */
+
+.contact-section {
+  min-height: 100vh; /* to create space on the page */
+  display: block;
+  width: 100%;
+  background-color: #222222;
+  padding: 100px 15px; /* creates that top gap */
+}
+
+.contact-section .contact-form {
+  flex: 0 0 100%;
+  max-width: 100%;
+  padding: 0 15px;
+}
+
+.contact-section .contact-form form {
+  max-width: 900px;
+  margin: auto;
+}
+
+.contact-section .contact-form .input-group {
+  flex: 0 0 100%; /* to increase message box size */
+  max-width: 100%;
+  /* margin-bottom: 5px; to create spaces between text boxes */
+  padding: 0 15px;
+}
+.contact-section .contact-form .input-group.input-3 {
+  /* when class name is spaced out in div . is next to it */
+  flex: 0 0 33.33%;
+  max-width: 33.33%;
+}
+
+.contact-section .contact-form .input-control {
+  width: 100%;
+  height: 50px;
+  margin-bottom: 30px;
+  background-color: transparent; /* for cool background */
+  font-size: 16px;
+  border: 1px solid #444444;
+  padding: 0 15px;
+  border-radius: 8px;
+  transition: border 0.3s ease;
+  color: #ffffff; /* for background color */
+}
+
+.contact-section .contact-form textarea.input-control {
+  height: 180px;
+  resize: none;
+  padding-top: 15px;
+}
+
+.contact-section .contact-form .input-control:focus {
+  outline: none;
+  border-color: #2196f3;
+}
+
+.contact-section .contact-form .submit-btn {
+  height: 50px;
+  background-color: #2196f3;
+  color: #ffffff;
+  font-size: 16px;
+  border: 1px solid transparent;
+  width: 100%;
+  border-radius: 8px;
+  transition: all 0.5s ease;
+  cursor: pointer;
+}
+
+.contact-section .contact-form .submit-btn:hover {
+  background-color: transparent;
+  color: #2196f3;
+  border-color: #2196f3;
+}
+
+/* footer */
+
+footer {
+  background: #111;
+  text-align: center; /* to center email */
+  padding: 2.5em 0; /* to push it down */
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.footer2 {
+  font-weight: var(--fw-bold);
+}
+
+.footer2,
+.social-link:hover {
+  opacity: 0.7;
+}
+
+.social-list {
+  /* for social apps */
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  margin: 2em 0; /* to push it down */
+  padding: 0;
+}
+
+.social-item {
+  margin: 0 0.5em; /* to space in between social apps */
+}
+
+.social-link {
+  padding: 0.5em; /* to space out in between social links */
+  font-weight: bold;
+}
+
+/*  responsive contact */
+@media (max-width: 767px) {
+  .contact-section .contact-form .input-group.input-3 {
+    flex: 0 0 100%;
+    max-width: 100%;
+    /* min-height: 20vh; */
+
+    /* overflow: hidden; it doesnt do anything here*/
+  }
+}
+
+@media (max-width: 450px) {
+  .contact-section {
+    padding-bottom: 0; /* but it does here */
+  }
+}
+
+@media (max-width: 800px) {
+  .contact-section {
+    padding-top: 200px;
+    /* padding-bottom: -0px; */
+  }
+}
+
+/* responsive proyects-non grid view */
+
+
+
+@media (max-width: 502px) {
+  .my {
+    /* max-width: 50%; */
+    /* width: 60%; */
+    margin-left: 20px;
+    /* padding-left: 40px; */
+    /* padding-right: 40px; */
+    /* margin: 0.5em auto; */
+  }
+}
+
+@media (max-width: 503px) {
+  .logo img {
+    left: 100px;
+    margin-left: -120px;
+  }
+  /* for about & ab */
+  .ab h2 {
+    /* padding-left: 20px; */
+  }
+  .pic h2 {
+    /* color: red; */
+    font-size: 25px;
+    text-indent: 10px;
+    letter-spacing: 1px;
+    line-height: 40px;
+    column-count: 1;
+    padding: 2px;
+    top: 530px;
+    padding-left: 40px;
+    padding-top: -80px;
+  }
+  .pic img {
+    clip-path: circle(34% at 50%);
+    left: 80px;
+    bottom: 10px;
+  }
+}
+
+@media (max-width: 503px) {
+  .about h1 {
+    /* right: 420px; */
+    display: flex; /* i fix it w/ these 4 props cent element*/
+    /* justify-content: center; */
+    /* padding-left: 50px; */
+    padding-right: 130px;
+    color: #2196f3;
+    top: 1850px;
+    /* padding-left: -150px; */
+    /* margin-left: 900px; */
+    /* margin-left: -100px; */
+    /* margin-left: 220px; */
+    /* margin-left: -120px; */
+    /* right: 110px; */
+    /* padding-top: 50px; */
+    /* font-weight: 800; */
+    /* background: white; */
+  }
+  .about {
+  }
+}
+
+@media (max-width: 503px) {
+  .ab .svg {
+    top: 1682px;
+  }
+}
+
+@media (max-width: 503px) {
+  /* this section creates overflow */
+  .boxes {
+    /* display: none; */
+    display: flex;
+    flex-direction: column;
+    /* flex-direction: column; */
+    /* flex-direction: column; */
+    /* flex-direction: column; */
+    /* display: none; */
+  }
+  .Figma a {
+    pointer-events: none;
+  }
+
+  .Figma {
+    align-items: center;
+    text-align: center;
+    /* display: block; */
+    /* padding-bottom: -100px; */
+    /* margin-left: 75px; */
+  }
+  .Figma2 a {
+    pointer-events: none;
+  }
+
+  .Figma2 {
+    text-align: center;
+    padding-top: 20px;
+    /* margin-left: 25px; */
+    /* padding-top: 25px; */
+    border-radius: 20px;
+  }
+  .Figma3 {
+    text-align: center;
+    padding-top: 20px;
+    padding-left: 100px;
+    /* display: none; */
+    /* padding-top: 25px; */
+    margin-bottom: 200px;
+  }
+  .Figma3 .btn {
+    left: 175px;
+    width: 50%;
+    z-index: 100;
+    /* height: 45px; */
+  }
+}
+
+@media (max-width: 503px) {
+  .P-works {
+    /* display: none; */
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    /* flex: 0 0 100%; */
+    /* max-width: 100%; */
+  }
+  .mini-box2 {
+    /* left: 100px; */
+    padding-top: 2200px;
+    position: absolute;
+    margin-left: -150px;
+    /* overflow: hidden; */
+  }
+  .mn1 {
+    /* padding-left: 50px; */
+  }
+
+  .mn {
+    font-size: 20px;
+  }
+
+  .mini-box {
+    /* position: absolute; */
+    padding-top: 1300px;
+    padding-left: 230px;
+    overflow: hidden;
+  }
+  .mini-box3 {
+    /* padding-left: 230px; */
+    margin-left: -420px;
+    padding-top: 3000px;
+
+    /* overflow: hidden; */
+  }
+
+  .cuadro1 .btn {
+    margin-left: 80px;
+    width: 31%;
+    /* top: 290px; */
+  }
+  .cuadro2 .btn {
+    margin-left: 80px;
+    width: 31%;
+    /* top: 290px; */
+  }
+  .cuadro3 .btn {
+    margin-left: 80px;
+    width: 31%;
+    /* top: 290px; */
+  }
+  .cuadro1 h1 {
+    font-size: 20px;
+  }
+  .btn {
+    padding-top: 1px 2px;
+  }
+}
+
+/* resp about */
+
+@media (max-width: 503px) {
+  .mp4 h1 {
+    /* max-width: 100%; */
+    margin-left: -60px;
+    padding-left: 20px;
+    color: #0880d6;
+    font-weight: 500;
+  }
+}
+
+@media (max-width: 450px) {
+  body {
+    background-color: yellow;
+    /* max-width: 100%; */
+    /* overflow: hidden; */
+    /* overflow-y: scroll; */
+    /* display: flex; */
+    /* flex-direction: column; */
+    /* margin-left: 0; */
+    /* display: block; */
+  }
+}
+
+
+
+/* ipad size */
+@media (max-width: 800px) {
+  .logo img {
+    /* overflow-x: hidden; */
+    /* position: absolute; */
+    left: 330px;
+    /* flex: 0 0 15%; */
+    /* max-width: 15%; */
+    /* flex: 0 0 33.33%; */
+    /* max-width: 33.33%; */
+
+    /* padding: 10px;  it makes it bigger-smaller*/
+    width: 15%;
+    height: 6%;
+    /* left: 300px; */
+    /* top: 10px; */
+  }
+}
+
+@media (max-width: 767px) {
+  .Projects {
+    /* this line of code makes page responsive */
+    
+  }
+}
+
+@media (min-width: 800px) {
+  .mn .mn1 .mn2{
+    flex: 0 0 100%;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .cuadro1 .btn {
+    left: 80px;
+    max-width: 100%;
+  }
+  .cuadro2 .btn {
+    left: 80px;
+    max-width: 100%;
+  }
+  .cuadro3 .btn {
+    left: 80px;
+    max-width: 100%;
+  }
+}
+@media (max-width: 800px) {
+  .cuadro1 h1 {
+    position: sticky;
+    left: 34px;
+    font-size: 20px;
+    top: 2570px;
+  }
+  .cuadro2 h1 {
+    position: sticky;
+    left: 290px;
+    font-size: 20px;
+    top: 2570px;
+  }
+  .cuadro3 h1 {
+    /* display: block; */
+    position: sticky;
+    left: 590px;
+    font-size: 20px;
+    top: 2570px;
+  }
+}
+/* burguer menu */
+@media (max-width: 800px) {
+  .nav-toggle {
+    padding: 2em;
+    background: transparent; /* toggle color */
+    border: 0;
+    cursor: pointer;
+    position: absolute;
+    right: 0; /* to push it back to the right !!! */
+    top: 2em;
+    z-index: 1000;
+  }
+}
+
+@media (max-width: 800px) {
+  .hamburger {
+    display: block;
+    position: relative;
+    bottom: 17px;
+  }
+  .hamburger,
+  .hamburger::before,
+  .hamburger::after {
+    background: #303030; /* menu, x - color */
+    width: 2em;
+    height: 3px;
+    border-radius: 1em;
+    transition: transform 250ms ease-in-out;
+  }
+  .hamburger::before,
+  .hamburger::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+  }
+  .hamburger::before {
+    top: 6px;
+  }
+  .hamburger::after {
+    bottom: 6px;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-open .nav {
+    /*adds animation for menu popup */
+    /* background: red; */
+    transform: translateX(0); /*animation */
+  }
+  .nav-open .nav-toggle {
+    /* for menu to stay fixed when scrolling */
+    position: fixed;
+  }
+  .nav-open .hamburger {
+    /* to create x menu */
+    transform: rotate(0.625turn);
+  }
+  .nav-open .hamburger::before {
+    /* to customize x */
+    transform: rotate(90deg) translateX(-6px);
+  }
+  .nav-open .hamburger::after {
+    opacity: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav {
+    position: fixed;
+    background: darkcyan;
+    color: violet;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 100; /* to cover all screen in black */
+    transform: translateX(100%); /*to view nav menu */
+    transition: transform 250ms cubic-bezier(0.5, 0, 0.5, 1);
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-list {
+    list-style: none;
+    display: flex; /* to spread menus next to each other */
+    height: 100%;
+    flex-direction: column; /* so you can use justify con next */
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0; /* to fix alignment use both */
+    padding: 0;
+  }
+}
+
+@media (max-width: 800px) {
+  .nav-link {
+    color: blue;
+    font-weight: 900; /* this is how you list bold numbers */
+    font-size: 2.25rem; /* rem makes it bigger in litte number */
+  }
+}
+
+@media (max-width: 800px) {
+  .boxes {
+    /* display: flex; */
+    /* flex-direction: row; */
+    /* display: flex; */
+    /* flex-wrap: nowrap; */
+    /* margin-left: -120px; */
+    /* flex: 0 0 100%; */
+    /* max-width: 100%; */
+  }
+  .Figma {
+    /* display: inline-block; */
+    width: 100%;
+    left: -5px;
+    border-radius: 17px;
+  }
+  .Figma2 {
+    width: 100%;
+    left: -5px;
+    border-radius: 17px;
+  }
+  .Figma3 {
+    left: -5px;
+    /* padding-left: -100px; */
+  }
+}
+@media (max-width: 800px) {
+  .ab {
+    height: 100vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .pic {
+    height: 50vh;
+    /* padding-bottom: 90%; */
+  }
+  .pic h2 {
+    color: #2196f3;
+    font-size: 25px;
+    left: -25px;
+    /* font-size: 10px; */
+    /* text-indent: 10px; */
+    /* letter-spacing: 1px; */
+    /* line-height: 40px; */
+  }
+  .svg {
+    top: 1627px;
+    width: 100%;
+  }
+}
+
+@media (max-width: 800px) {
+  .boxes {
+    /* height: 20vh; */
+    padding-top: 70px;
+  }
+}
+
+@media (max-width: 800px) {
+  .mini-box {
+    /* position: relative; */
+    left: 133px;
+    top: 3050px;
+    /* bottom: 20px; */
+    /* font-size: 10px; */
+    /* width: 20px; */
+    /* display: none; */
+  }
+  .mini-box2 {
+    top: 3050px;
+    left: 400px;
+    width: 20%;
+  }
+  .mini-box3 {
+    top: 3050px;
+    left: 660px;
+    width: 20%;
+  }
+}
+
+@media (max-width: 800px) {
+  .cuadro1 h1 {
+    font-size: 20px;
+  }
+  .cuadro2 h1 {
+    font-size: 20px;
+    padding: 10px 10px;
+  }
+  .cuadro3 h1 {
+    font-size: 20px;
+    padding: 10px 10px;
+  }
+}
+
+@media (max-width: 800px) {
+  .about h1 {
+    /* text-align: center; */
+    /* position: absolute; */
+    padding-top: 5px;
+    padding-left: 3px;
+    left: 320px;
+    margin: 0.5em auto;
+    width: 17%;
+    /* margin-left: 20px; */
+    /* padding-left: 300px; */
+    color: #2196f3;
+    font-size: 40px;
+    border-radius: 10%;
+
+    /* background: #444444; */
+  }
+  .about {
+    padding-top: 55px;
+  }
+}
+
+@media (max-width: 800px) {
+  .my {
+    max-width: 40%;
+  }
+  .P-works .btn {
+    padding-bottom: 40px;
+  }
+}
